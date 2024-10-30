@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="Edit profile.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="wp-block-site-logo">
+                <a href="#" class="custom-logo-link" rel="home" aria-current="page">
+                    <img width="250" height="120" src="images/UENR.png" class="custom-logo" alt="Exeat Management System" decoding="async"/>
+                </a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="dashboard 1.html"><h1>Home</h1></a>
+                       
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="profile-header">
+                <h1>Edit Profile</h1>
+                <p>Update your personal and contact information</p>
+            </div>
+
+            <form action="update-profile.php" method="post">
+                <div class="profile-details">
+                    <div class="section">
+                        <h2>Personal Information</h2>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" value="Emmanuel Asante" required>
+
+                        <label for="student-id">Student ID:</label>
+                        <input type="text" id="student-id" name="student-id" value="12345678" required>
+
+                        <label for="birthdate">Birth Date:</label>
+                        <input type="date" id="birthdate" name="birthdate" value="2000-01-01" required>
+
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="male" selected>Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="section">
+                        <h2>Contact Information</h2>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" value="emmaasante@gmail.com" required>
+
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" name="phone" value="+2335545678905" required>
+
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" value="123 University Street, Sunyani, Ghana" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="save-profile-btn">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

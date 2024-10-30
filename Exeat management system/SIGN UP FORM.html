@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <div style="text-align: center;">
+        <img src="images/UENR.png" style="float:center;">
+        <link rel="stylesheet" href="signup page.css">
+    </div>
+    <h1>UENR BASIC</h1>
+    <style> 
+        h1 {
+            text-align:center;
+            font-size:normal;
+        }
+    </style>
+    <title>Sign up form</title>
+</head>
+<body>
+    <form action="process_signup.php" method="post">
+        <div style="text-align: center;"><br>
+            <h2>SIGN UP</h2>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" placeholder="  Enter First Name" name="first_name" required><br><br>
+
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" placeholder="  Enter Last Name" name="last_name" required><br><br>
+
+            <label for="contact">Contact:</label><br>
+            <input type="text" id="contact" placeholder="  Enter Contact" name="contact" required><br><br>
+
+            <label for="email">E-Mail:</label><br>
+            <input type="email" id="email" placeholder="  Enter E-mail" name="email" required><br><br>
+
+            <label for="ward_name">Ward's Name:</label><br>
+            <input type="text" id="ward_name" placeholder="  Enter Ward's Name" name="ward_name" required><br><br>
+
+            <label for="index_number">Ward's Index Number:</label><br>
+            <input type="text" id="index_number" placeholder="  Enter Ward's Index Number" name="index_number" required placeholder="ward's index number"><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" placeholder="  Enter Password" name="user_password" required><br><br>
+
+            <label for="confirm_password">Confirm Password:</label><br>
+            <input type="password" id="confirm_password" placeholder="  Confirm Password" name="confirm_user_password" required><br><br>
+
+            <label for="relation">Relation To Ward:</label><br>
+            <input type="radio" id="mother" name="relation" value="MOTHER">
+            <label for="mother">Mother</label><br>
+            <input type="radio" id="father" name="relation" value="FATHER">
+            <label for="father">Father</label><br>
+            <input type="radio" id="others" name="relation" value="OTHERS">
+            <label for="others">Other</label><br><br>
+
+            <button type="submit" name="submit">Sign up</button>
+        </div>
+    </form>
+
+   
+</body>
+</html>

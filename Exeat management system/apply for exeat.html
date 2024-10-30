@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name='robots' content='max-image-preview:large'/>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This website is awesome" />
+    <title>UENR Basic Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" /> 
+    <link rel="stylesheet" href="apply for exeat.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <div class="wp-block-site-logo">
+          <a href="#" class="custom-logo-link" rel="home" aria-current="page">
+              <img width="250" height="120" src="images/UENR.png" class="custom-logo" alt="Exeat Management System" decoding="async"/>
+              <style>
+                img {
+                  float: left;
+                }
+              </style>
+          </a>
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#"><h1>Exeat</h1></a>
+              <ul class="dropdown">
+                <li><a href="#">Apply for Exeat</a></li>
+                <li><a href="View request.php">View Requests</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><h1>Attendance</h1></a>
+              <ul class="dropdown">
+                <li><a href="Entry logs.html">Entry Logs</a></li>
+                <li><a href="Exit logs.html">Exit Logs</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><h1>Profile</h1></a>
+              <ul class="dropdown">
+                <li><a href="view profile.php">View Profile</a></li>
+                <li><a href="edit profile.php">Edit Profile</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><h1>Settings</h1></a>
+              <ul class="dropdown">
+                <li><a href="Notifications.html">Notifications</a></li>
+                <li><a href="Security.html">Security</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/Home page.html"><h1>Logout</h1></a>
+            </li>
+          </ul>
+        </div>
+    
+      </div>
+
+      <div class="content">
+        <div class="form-container">
+          <h4>REQUEST FORM</h4>
+          <form action="Apply for exeat process.php" method="post">
+        <label for="student_name">Student Name:</label>
+        <input type="text" id="student_name" placeholder="Enter Student's Name" name="student_name" required><br><br>
+
+        <label for="student_id">Student Id:</label>
+        <input type="text" id="student_id" name="student_id" placeholder="Enter Student's ID" required><br><br>
+
+        <label for="request_date">Request Date:</label>
+        <input type="date" id="request_date" name="request_date" required><br><br>
+
+        <h5>Requested Exeat Period</h5>
+        <label for="date_from">Start Date:</label>
+        <input type="date" id="start_date" name="start_date" required><br><br>
+
+        <label for="date_to">End Date:</label>
+        <input type="date" id="end_date" name="end_date" required><br><br>
+
+        <label for="Reason">Reason:</label><br>
+        <input type="radio" id="Sick" name="Reason" value="Sick" required>
+        <label for="Sick">Sick</label><br>
+        <input type="radio" id="closed" name="Reason" value="Closed">
+        <label for="Closed">Closed</label><br>
+        <input type="radio" id="OTHERS" name="Reason" value="Others">
+        <label for="OTHERS">Others</label><br><br>
+
+        <textarea id="REASON" name="REASON" placeholder="Additional reason (optional)"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

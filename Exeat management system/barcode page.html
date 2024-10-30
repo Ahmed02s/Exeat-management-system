@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVE BARCODE</title>
+    <link rel="stylesheet" href="barcode.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="wp-block-site-logo">
+                <img src="images/UENR.png" alt="Logo" height="50px">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="dashboard 1.html">Home</a></li>
+                    
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+       <div>
+        <h1>SAVE BARCODE</h1>
+       </div>
+        <div class="barcode-container">
+            <svg id="barcode"></svg>
+            <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+            <script>
+              JsBarcode("#barcode", "ubs3510", {
+                format: "CODE128",
+                displayValue: true,
+                fontSize: 30,
+                width: 15,
+                height: 500,
+              });
+            </script><br>
+            
+          </div>
+       
+</body>
+</html>

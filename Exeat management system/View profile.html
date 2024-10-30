@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="View profile.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="wp-block-site-logo">
+                <a href="#" class="custom-logo-link" rel="home" aria-current="page">
+                    <img width="200" height="120" src="images/UENR.png" class="custom-logo" alt="Exeat Management System" decoding="async"/>
+                </a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="dashboard 1.html"><h1>Home</h1></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="profile-header">
+                <img src="images/parent picking child.jpg" alt="User Profile Picture">
+                <h1><?php echo $user['first_name'] . ' ' . $user['last_name']; ?></h1>
+                <p>Student at University of Energy and Natural Resources</p>
+            </div>
+
+            <div class="profile-details">
+                <div class="section">
+                    <h2>Personal Information</h2>
+                    <p><strong>Name:</strong> <?php echo $user['first_name'] . ' ' . $user['last_name']; ?></p>
+                    <p><strong>Student ID:</strong> <?php echo $user['student_id']; ?></p>
+                    <p><strong>Birth Date:</strong> <?php echo $user['birth_date']; ?></p>
+                    <p><strong>Gender:</strong> <?php echo $user['gender']; ?></p>
+                </div>
+                <div class="section">
+                    <h2>Contact Information</h2>
+                    <p><strong>Email:</strong> <?php echo $user['email']; ?></p>
+                    <p><strong>Phone:</strong> <?php echo $user['contact']; ?></p>
+                    <p><strong>Address:</strong> <?php echo $user['address']; ?></p>
+                </div>
+            </div>
+
+            <a href="Edit profile.html" class="edit-profile-btn">Edit Profile</a>
+        </div>
+    </div>
+
+</body>
+</html>

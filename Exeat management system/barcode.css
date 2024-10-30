@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('/images/dashboard.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main {
+    width: 100%;
+  }
+  
+  .navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .wp-block-site-logo {
+    float: left;
+    padding: 10px;
+  }
+  
+  .menu {
+    float: left;
+    height: 70px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  ul li {
+    padding: 0 20px;
+    position: relative;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  ul li:hover a {
+    color: #FFD700;
+  }
+  
+  ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    list-style: none;
+    z-index: 1000;
+  }
+  
+  ul li:hover ul.dropdown {
+    display: block;
+  }
+  
+  ul li ul.dropdown li {
+    width: 200px;
+    padding: 10px 0;
+  }
+  
+  ul li ul.dropdown li a {
+    padding-left: 20px;
+  }
+  
+  .container {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  thead {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+
+  
+  .barcode-container{
+    padding: 8%;
+    margin-top: 200px;
+  }
+
+  h1{
+    color: rgb(1, 14, 14);
+    margin-left: 35%;
+    font-size: 60px;
+    
+ 
+  }
